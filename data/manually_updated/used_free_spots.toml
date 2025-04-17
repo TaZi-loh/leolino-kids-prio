@@ -1,0 +1,4 @@
+# enter the values in a dict with keys the dates and values being a list of children that used one of the free spots
+# that day. E.g., if groups A and B are allowed to come on the 1.4.2025, then there are two free spots. Assume that
+# Viola (group C) and Tino (group D) take those free spots, then they are entered in this file like
+# "01.04.2025" = [ "Viola", "Tino",]
