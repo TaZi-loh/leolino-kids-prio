@@ -8,8 +8,21 @@ GROUPS = {
         "F": ["Giulio", "Leia", "Holly"],
     },
     "Ü3": {
-        "A": ["Jeremyas", "Carlo"],
-        "B": ["Hayley"],
+        "A": [
+            "Mani",
+            "Benjamin",
+            "Mila",
+            "Sofia",
+            "Chleo",
+            "Jeremyas-Max",
+            "Ana Laura",
+            "Larissa",
+            "Felix",
+            "Zsigmond",
+        ],
+        "B": ["Conrad", "Ferdinand", "Ananya", "Damian", "Kylian", "Lukas", "Noah", "Valentina", "Timo", "Tina"],
+        "C": ["Liam", "Yasmin", "Hayley Xin", "Max", "Camille", "Lars", "Emin", "Gabriel", "Karlo", "Valentin"],
+        "D": ["Sara", "Juna"],
     },
 }
 
