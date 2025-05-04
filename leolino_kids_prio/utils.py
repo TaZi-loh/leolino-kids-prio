@@ -6,7 +6,7 @@ from xmlrpc.client import DateTime
 
 import toml
 
-from leolino_kids_prio.groups import GROUP_SIZE, GROUPS
+from leolino_kids_prio.groups import GROUP_SIZE
 
 Kid = str
 Group = str
@@ -30,6 +30,11 @@ class Data:
     @property
     def allowed_groups_history(self) -> list[dict[DateTime, list[Kid]]]:
         with (self.root / "manually_updated" / "allowed_groups.toml").open("r", encoding="utf-8") as f:
+            return toml.load(f)
+
+    @property
+    def groups(self) -> dict[Age, dict[Group, list[Kid]]]:
+        with (self.root / "manually_updated" / "groups.toml").open("r", encoding="utf-8") as f:
             return toml.load(f)
 
     @property
@@ -61,8 +66,7 @@ class Data:
 
     def all_kids(self, age: Age) -> set[Kid]:
         """Returns the set of all kids in either U3 or Ü3."""
-        return set.union(*(set(GROUPS[age][group]) for group in GROUPS[age]))
-        # return set(*GROUPS[age][group] for group in GROUPS[age])
+        return set.union(*(set(self.groups[age][group]) for group in self.groups[age]))
 
     def allowed_and_prio(self, age: Age, groups: list[Group]) -> tuple[list[Kid], int, list[Kid]]:
         """Computes the list of allowed kids (for U3 or Ü3), the number of free spots and a priority list of all other kids.
@@ -76,7 +80,7 @@ class Data:
             - nr_free_spots: the number of free spots which can be filled by the kids in the `prio` list.
             - prio: a list of all other kids sorted by priority (early in the list means higher priority)
         """
-        allowed_kids = set.union(*(set(GROUPS[age][group]) for group in groups))
+        allowed_kids = set.union(*(set(self.groups[age][group]) for group in groups))
         nr_free_spots = len(groups) * GROUP_SIZE[age] - len(allowed_kids)
         other_kids = list(self.all_kids(age) - allowed_kids)
         # other_kids_w_prios = [(kid, self.prio_key(kid)) for kid in other_kids]
