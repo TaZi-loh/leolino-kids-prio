@@ -6,7 +6,7 @@ from xmlrpc.client import DateTime
 
 import toml
 
-from leolino_kids_prio.groups import GROUP_SIZE
+from leolino_kids_prio.constants import GROUP_SIZE
 
 Kid = str
 Group = str
