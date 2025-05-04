@@ -27,8 +27,3 @@ GROUPS = {
 }
 
 GROUP_SIZE = {"U3": 5, "Ü3": 10}
-
-ALLWAYS_ALLOWED = {
-    "U3": ["Leia", "Holly"],
-    "Ü3": [],
-}
