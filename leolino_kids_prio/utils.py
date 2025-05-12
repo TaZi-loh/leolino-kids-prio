@@ -69,7 +69,7 @@ class Data:
         return set.union(*(set(self.groups[age][group]) for group in self.groups[age]))
 
     def allowed_and_prio(self, age: Age, groups: list[Group]) -> tuple[list[Kid], int, list[Kid]]:
-        """Computes the list of allowed kids (for U3 or Ü3), the number of free spots and a priority list of all other kids.
+        """Computes the list of allowed kids (for U3 or Ü3), the number of free spots and a priority list of other kids.
 
         Args:
             age:
@@ -80,7 +80,7 @@ class Data:
             - nr_free_spots: the number of free spots which can be filled by the kids in the `prio` list.
             - prio: a list of all other kids sorted by priority (early in the list means higher priority)
         """
-        allowed_kids = set.union(*(set(self.groups[age][group]) for group in groups))
+        allowed_kids = set.union(*(set(self.groups[age][group]) for group in groups)) if len(groups) > 0 else set()
         nr_free_spots = len(groups) * GROUP_SIZE[age] - len(allowed_kids)
         other_kids = list(self.all_kids(age) - allowed_kids)
         # other_kids_w_prios = [(kid, self.prio_key(kid)) for kid in other_kids]
