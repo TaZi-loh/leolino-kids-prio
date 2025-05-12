@@ -1,0 +1,5 @@
+# this file contains the groups that were allowed at certains days of Notbetreuung. If an age (U3 or Ü3) is not listed,
+# it means that there were no restrictions with respect to kids of this age group and that all of them could come to the
+# daycare on that day.
+["09.05.2025"]
+"Ü3" = ["B", "C", "D"]

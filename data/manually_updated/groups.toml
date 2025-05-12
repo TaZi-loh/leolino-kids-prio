@@ -1,3 +1,4 @@
+# This file contains the current setup of groups for all kids, split into the U3 groups (Linos) and the Ü3 groups (Leos)
 [U3]
 A = ["Lian", "Luca", "Khan", "Leia", "Holly"]
 B = ["Ava", "Thomas", "Emma", "Leia", "Holly"]
