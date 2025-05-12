@@ -23,12 +23,12 @@ class Data:
         self.root = Path(__file__).parent.parent / "data" if root is None else root
 
     @property
-    def allowed_kids_history(self) -> list[dict[DateTime, list[Kid]]]:
+    def allowed_kids_history(self) -> dict[DateTime, list[Kid]]:
         with (self.root / "generated" / "allowed_kids.toml").open("r", encoding="utf-8") as f:
             return toml.load(f)
 
     @property
-    def allowed_groups_history(self) -> list[dict[DateTime, list[Kid]]]:
+    def allowed_groups_history(self) -> dict[DateTime, dict[Age, list[Group]]]:
         with (self.root / "manually_updated" / "allowed_groups.toml").open("r", encoding="utf-8") as f:
             return toml.load(f)
 
