@@ -21,6 +21,14 @@ class Data:
 
     def __init__(self, root: Optional[Path] = None):
         self.root = Path(__file__).parent.parent / "data" if root is None else root
+        self.assert_initial_kid_priority()
+
+    def assert_initial_kid_priority(self) -> None:
+        prio_file = self.root / "generated" / "initial_kid_priority.toml"
+        if not prio_file.exists():
+            init_prio = {kid: 0 for kid in self.all_kids("U3").union(self.all_kids("Ü3"))}
+            with prio_file.open("w", encoding="utf-8") as f:
+                toml.dump(init_prio, f)
 
     @property
     def allowed_kids_history(self) -> list[dict[DateTime, list[Kid]]]:
@@ -62,7 +70,7 @@ class Data:
                 f.write("\n".join(all_kids))
 
         with file_path.open("r") as f2:
-            return f2.read().split()
+            return f2.read().split("\n")
 
     def all_kids(self, age: Age) -> set[Kid]:
         """Returns the set of all kids in either U3 or Ü3."""
