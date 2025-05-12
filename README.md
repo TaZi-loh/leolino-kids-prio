@@ -1,4 +1,15 @@
 # leolino-kids-prio
+The basic plan for May 16th looks like this (run 
+[determine_priorities.py](leolino_kids_prio/scripts/determine_priorities.py) to reproduce):
+
+```
+Today, the groups ['C', 'D'] are can come to the daycare. I.e., the kids:
+['Aaron', 'Lisa', 'Leia', 'Marissa', 'Tino', 'Viola', 'Holly', 'Adya']
+can come.
+There are 2 free spots which can be filled with kids from the priority list, which currently looks like:
+['Emilia', 'Giulio', 'Leo', 'Leonie', 'Khan', 'Constantin', 'Nela', 'Emma', 'Ava', 'Robert', 'Luca', 'Lian', 'Thomas']
+```
+
 
 [![Release](https://img.shields.io/github/v/release/TaZi-loh/leolino-kids-prio)](https://img.shields.io/github/v/release/TaZi-loh/leolino-kids-prio)
 [![Build status](https://img.shields.io/github/actions/workflow/status/TaZi-loh/leolino-kids-prio/main.yml?branch=main)](https://github.com/TaZi-loh/leolino-kids-prio/actions/workflows/main.yml?query=branch%3Amain)
