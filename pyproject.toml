@@ -17,6 +17,9 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dependencies = [
+    "multiset"
+]
 
 [project.urls]
 Homepage = "https://TaZi-loh.github.io/leolino-kids-prio/"
