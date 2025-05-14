@@ -1,6 +1,3 @@
-# enter the values in a dict with keys being the dates and values being a list of children that offered their spot that
-# day. E.g., if groups A and B are allowed to come on the 1.4.2025 and Thomas (who is in group B) as well as Lian (from
-# group A) don't come, they are entered in this file like
-# "01.04.2025" = [ "Thomas", "Lian",]
-"09.05.2025" = ["Valentina", "Valentin", "Damian", "Karlo", "Yasmin", "Viola", "Lea Amelie"]
-"14.05.2025" = ["Emilia", "Giulio", "Robert", "Holly", "Viola", "Tino", "Ava", "Valentina", "Damian", "Liam", "Karlo", "Felix", "Jeremyas-Max"]
+"09.05.2025" = [ "Valentina", "Valentin", "Damian", "Karlo", "Yasmin", "Viola", "Lea Amelie",]
+"14.05.2025" = [ "Emilia", "Giulio", "Robert", "Holly", "Viola", "Tino", "Ava", "Valentina", "Damian", "Liam", "Karlo", "Felix", "Jeremyas-Max",]
+"15.05.2025" = [ "Khan", "Holly", "Ava", "Karlo", "Camille", "Emin", "Valentin", "Taro", "Moritz", "Jeremyas-Max", "Felix", "Larissa", "Ana Laura",]

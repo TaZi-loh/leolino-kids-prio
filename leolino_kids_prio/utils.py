@@ -1,10 +1,12 @@
 import random
+from copy import deepcopy
 from functools import cache
 from pathlib import Path
 from typing import Literal, Optional
 from xmlrpc.client import DateTime
 
 import toml
+from multiset import Multiset
 
 from leolino_kids_prio.constants import GROUP_SIZE
 
@@ -68,7 +70,7 @@ class Data:
         """Returns the set of all kids in either U3 or Ü3."""
         return set.union(*(set(self.groups[age][group]) for group in self.groups[age]))
 
-    def allowed_and_prio(self, age: Age, groups: list[Group]) -> tuple[list[Kid], int, list[Kid]]:
+    def allowed_and_prio(self, age: Age, groups: list[Group]) -> tuple[list[Kid], int, list[Kid], Multiset[Kid]]:
         """Computes the list of allowed kids (for U3 or Ü3), the number of free spots and a priority list of other kids.
 
         Args:
@@ -79,13 +81,98 @@ class Data:
             - allowed_kids: a list of kids that can definitely come, because they are in one of the allowed groups
             - nr_free_spots: the number of free spots which can be filled by the kids in the `prio` list.
             - prio: a list of all other kids sorted by priority (early in the list means higher priority)
+            - duplicates: multiset of kids that were duplicated because they appear in more than one group.
         """
-        allowed_kids = set.union(*(set(self.groups[age][group]) for group in groups)) if len(groups) > 0 else set()
-        nr_free_spots = len(groups) * GROUP_SIZE[age] - len(allowed_kids)
-        other_kids = list(self.all_kids(age) - allowed_kids)
+        allowed_kids_with_duplicates = Multiset.combine(*(Multiset(self.groups[age][group]) for group in groups)) if len(groups) > 0 else Multiset()
+        allowed_kids_no_duplicates = set(allowed_kids_with_duplicates)
+        duplicates = allowed_kids_with_duplicates.difference(allowed_kids_no_duplicates)
+        nr_free_spots = len(groups) * GROUP_SIZE[age] - len(allowed_kids_no_duplicates)
+        other_kids = list(self.all_kids(age) - allowed_kids_no_duplicates)
         # other_kids_w_prios = [(kid, self.prio_key(kid)) for kid in other_kids]
         prio = sorted(other_kids, key=lambda kid: self.prio_key(kid))
-        return list(allowed_kids), nr_free_spots, prio
+        return list(allowed_kids_no_duplicates), nr_free_spots, prio, duplicates
+
+    @staticmethod
+    def fill_up(prio: list[Kid], nr_free_spots: int, duplicates: Multiset[Kid], stay_home_kids: list[Kid]) -> tuple[list[tuple[Kid, Optional[Kid], str]], list[Kid]]:
+        """
+
+        Args:
+            age: the age group that is concerned
+            prio: the calculated priority list
+            nr_free_spots: the number of free spots which can be filled by the kids in the `prio` list.
+            duplicates: multiset of kids that were duplicated because they appear in more than one group.
+            stay_home_kids: a list of kids that will stay home on this day.
+
+        Returns:
+            - A list of triple of (kid, kid, comment). The first kid will take the spot of the second kid.
+              The comment describes special cases
+            - A list of kids that stay home and would offer their spot, but there is no one to use that spot.
+        """
+        prio = deepcopy(prio)
+        duplicates = deepcopy(duplicates)
+        stay_home_kids = deepcopy(stay_home_kids)
+        result = []
+        while len(prio) > 0 and len(duplicates) > 0:
+            kid_highest_prio = prio.pop(0)
+            if kid_highest_prio not in stay_home_kids:
+                kid_duplicate = next(iter(duplicates))
+                result.append((kid_highest_prio, kid_duplicate, f"s {duplicates.remove(kid_duplicate, 1) + 1}. Platz"))
+                nr_free_spots -= 1
+            else:
+                stay_home_kids = [kid for kid in stay_home_kids if kid != kid_highest_prio]
+        while len(prio) > 0 and nr_free_spots > 0:
+            kid_highest_prio = prio.pop(0)
+            if kid_highest_prio not in stay_home_kids:
+                result.append((kid_highest_prio, None, f"freier Platz in einer der Gruppen"))
+                nr_free_spots -= 1
+            else:
+                stay_home_kids = [kid for kid in stay_home_kids if kid != kid_highest_prio]
+        while len(prio) > 0 and len(stay_home_kids) > 0:
+            kid_highest_prio = prio.pop(0)
+            if kid_highest_prio not in stay_home_kids:
+                kid_stay_home = stay_home_kids.pop(0)
+                result.append((kid_highest_prio, kid_stay_home, ""))
+            else:
+                stay_home_kids = [kid for kid in stay_home_kids if kid != kid_highest_prio]
+        return result, stay_home_kids
+
+    def full_announcement_and_toml_update(self, date: str, u3_groups: list[Group], u3_stay_home_kids: list[Kid], ue3_groups: list[Group], ue3_stay_home_kids: list[Kid]) -> str:
+        ann_u3, fill_ups_u3, leftover_stay_home_kids_u3 = self.announcement_age_group(date, "U3", u3_groups, u3_stay_home_kids)
+        ann_ue3, fill_ups_ue3, leftover_stay_home_kids_ue3 = self.announcement_age_group(date, "Ü3", ue3_groups, ue3_stay_home_kids)
+
+        used_free_spots = self.used_free_spots_history
+        used_free_spots[date] = [fu[0] for fu in fill_ups_u3 + fill_ups_ue3]
+        with (self.root / "manually_updated" / "used_free_spots.toml").open("w", encoding="utf-8") as f:
+            toml.dump(used_free_spots, f)
+
+        unused_days = self.unused_days_history
+        unused_days[date] = [fu[1] for fu in fill_ups_u3 + fill_ups_ue3 if fu[1] is not None and fu[2] == ""] + leftover_stay_home_kids_u3 + leftover_stay_home_kids_ue3
+        with (self.root / "manually_updated" / "unused_days.toml").open("w", encoding="utf-8") as f:
+            toml.dump(unused_days, f)
+
+        allowed_groups = self.allowed_groups_history
+        allowed_groups[date] = {}
+        allowed_groups[date]["U3"] = u3_groups
+        allowed_groups[date]["Ü3"] = ue3_groups
+        with (self.root / "manually_updated" / "allowed_groups.toml").open("w", encoding="utf-8") as f:
+            toml.dump(allowed_groups, f)
+
+        return f"{ann_u3}\n\n\n\n{ann_ue3}"
+
+    def announcement_age_group(self, date: str, age: Age, groups: list[Group], stay_home_kids: list[Kid]) -> tuple[str, list[tuple[Kid, Optional[Kid], str]], list[Kid]]:
+        allowed_kids, nr_free_spots, prio, duplicates = self.allowed_and_prio(age, groups)
+        fill_ups, leftover_stay_home_kids = self.fill_up(prio, nr_free_spots, duplicates, stay_home_kids)
+        fill_ups_ = [f"{fu[0]} ({"" if fu[1] is None else fu[1]}{fu[2]})" for fu in fill_ups]
+
+        result = f"Am {date} dürfen die {age} Gruppen {groups} in die Kita kommen. Das heißt, die folgenden Kinder dürfen kommen:\n"
+        result += f"{allowed_kids}\n\n"
+        result += f"Es gibt {nr_free_spots} freie Plätze, die mit Kindern von der Prioritätenliste gefüllt werden können. Diese sieht aktuell so aus:\n"
+        result += f"{prio}\n\n"
+        result += "Außerdem werden folgende Kinder nicht kommen, obwohl sie dürfen:\n"
+        result += f"{stay_home_kids}\n\n"
+        result += "Daraus ergibt sich, dass die folgenden Kinder kommen dürfen und den Platz des jeweils in Klammern genannten Kindes einnehmen:\n"
+        result += "\n".join(fill_ups_)
+        return result, fill_ups, leftover_stay_home_kids
 
     def prio_key(self, kid: Kid) -> tuple[int, int]:
         unused_prio = len([date for date, kids in self.unused_days_history.items() if kid in kids])
