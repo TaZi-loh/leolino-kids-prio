@@ -3,8 +3,8 @@ from leolino_kids_prio.utils import Data
 
 if __name__ == '__main__':
     date = "14. Mai 2025"
-    age_group = "U3"
-    allowed_groups = ["E", "F"]
+    age_group = "Ü3"
+    allowed_groups = ["A", "B", "C"]
 
     d = Data()
     allowed, nr, prio = d.allowed_and_prio(age_group, allowed_groups)
