@@ -62,7 +62,7 @@ class Data:
                 f.write("\n".join(all_kids))
 
         with file_path.open("r") as f2:
-            return f2.read().split()
+            return f2.read().split("\n")
 
     def all_kids(self, age: Age) -> set[Kid]:
         """Returns the set of all kids in either U3 or Ü3."""
