@@ -1,4 +1,4 @@
 # This file contains the kids names where at least one parent works in a daycare. To avoid a cascading collapse
 # of daycare workers, those kids are always allowed to come to the daycare.
 "U3" = ["Leia", "Holly"]
-"Ü3" = []
+"Ü3" = ["Noah"]
