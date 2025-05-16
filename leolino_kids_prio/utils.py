@@ -139,6 +139,8 @@ class Data:
     def full_announcement_and_toml_update(self, date: str, u3_groups: list[Group], u3_stay_home_kids: list[Kid], ue3_groups: list[Group], ue3_stay_home_kids: list[Kid]) -> str:
         ann_u3, fill_ups_u3, leftover_stay_home_kids_u3 = self.announcement_age_group(date, "U3", u3_groups, u3_stay_home_kids)
         ann_ue3, fill_ups_ue3, leftover_stay_home_kids_ue3 = self.announcement_age_group(date, "Ü3", ue3_groups, ue3_stay_home_kids)
+        announcement = f"{ann_u3}\n\n\n\n{ann_ue3}"
+        print(announcement)
 
         used_free_spots = self.used_free_spots_history
         used_free_spots[date] = [fu[0] for fu in fill_ups_u3 + fill_ups_ue3]
@@ -157,7 +159,7 @@ class Data:
         with (self.root / "manually_updated" / "allowed_groups.toml").open("w", encoding="utf-8") as f:
             toml.dump(allowed_groups, f)
 
-        return f"{ann_u3}\n\n\n\n{ann_ue3}"
+        return announcement
 
     def announcement_age_group(self, date: str, age: Age, groups: list[Group], stay_home_kids: list[Kid]) -> tuple[str, list[tuple[Kid, Optional[Kid], str]], list[Kid]]:
         allowed_kids, nr_free_spots, prio, duplicates = self.allowed_and_prio(age, groups)
@@ -168,7 +170,7 @@ class Data:
         result += f"{allowed_kids}\n\n"
         result += f"Es gibt {nr_free_spots} freie Plätze, die mit Kindern von der Prioritätenliste gefüllt werden können. Diese sieht aktuell so aus:\n"
         result += f"{prio}\n\n"
-        result += "Außerdem werden folgende Kinder nicht kommen, obwohl sie dürfen:\n"
+        result += "Außerdem werden folgende Kinder nicht kommen:\n"
         result += f"{stay_home_kids}\n\n"
         result += "Daraus ergibt sich, dass die folgenden Kinder kommen dürfen und den Platz des jeweils in Klammern genannten Kindes einnehmen:\n"
         result += "\n".join(fill_ups_)

@@ -2,13 +2,21 @@ from leolino_kids_prio.utils import Data
 
 
 if __name__ == '__main__':
+    """run this script to create the announcement.
+    
+    Some .toml files are modified by this script. The current implementation also considers used and unused
+    spots from the future. Hence, running this script twice will yield a different announcement.
+    If you want to avoid this, 
+    
+    run the script in debug mode up to the printing of the announcement.
+    """
     d = Data()
     full_ann = d.full_announcement_and_toml_update(
-        date="15.05.2025",
-        u3_groups=["A", "B"],
-        u3_stay_home_kids=["Khan", "Holly", "Viola", "Emilia", "Robert", "Ava"],
-        ue3_groups=["A", "C", "D"],
-        ue3_stay_home_kids=["Karlo", "Camille", "Damian", "Emin", "Valentin", "Taro", "Moritz", "Jeremyas-Max", "Felix", "Larissa", "Ana Laura"],
+        date="16.05.2025",
+        u3_groups=["C", "D"],
+        u3_stay_home_kids=["Robert", "Ava"],
+        ue3_groups=["A", "B", "C"],
+        ue3_stay_home_kids=["Damian", "Moritz", "Jeremyas-Max", "Felix", "Valentina", "Kylian"],
     )
     print(full_ann)
 
