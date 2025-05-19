@@ -20,7 +20,6 @@ Tino
 Noah
 Ananya
 Karlo
-Timo
 Giulio
 Benjamin
 Mani
@@ -30,7 +29,6 @@ Liam
 Mila
 Gabriel
 Jeremyas-Max
-Tina
 Viola
 Holly
 Damian
