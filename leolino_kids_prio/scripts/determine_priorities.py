@@ -12,9 +12,10 @@ if __name__ == '__main__':
     """
     d = Data()
     full_ann = d.full_announcement_and_toml_update(
-        date="19.05.2025",
-        u3_groups=["E", "F", "A"],
-        u3_stay_home_kids=["Emilia", "Nela", "Giulio", "Robert", "Adya", "Khan"],
+        date="20.05.2025",
+        u3_groups=["B", "C"],
+        # u3_groups=["A", "B", "C", "D", "E", "F"],
+        u3_stay_home_kids=["Leia"],
         ue3_groups=["A", "B", "C", "D"],
         ue3_stay_home_kids=[],
     )
