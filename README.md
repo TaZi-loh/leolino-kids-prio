@@ -1,3 +1,23 @@
+# Einführung
+
+Durch Krankheit o.Ä. kann es sein, dass an einem Tag nicht genügend Personal zur Verfügung steht, um alle Kinder der 
+Leolinos zu betreuen. In diesem Fall bestimmt die Kitaleitung, wieviele Gruppen betreut werden können und schreibt 
+eine E-Mail an alle Eltern. In dieser Mail sind dann ein paar Gruppen von Kindern gelistet, die an dem Tag betreut 
+werden können. Tatsächlich ist es aber so, dass eine maximale Anzahl an Kindern betreut werden kann, welche in der 
+Regel nicht durch die Kinder in den genannten Gruppen erreicht wird. Dies kann drei Gründe haben
+1. weil manche Kinder in mehreren Gruppen gelistet sind (Siehe dazu auch den Hinweis weiter unten)
+2. weil die Gruppen nicht voll sind
+3. weil gelistete Kinder an diesem Tag zu Hause bleiben (z.B. wegen Krankheit oder Urlaub).
+
+D.h., es gibt typischerweise noch freie Plätze, die belegt werden können. Um die Vergabe dieser Plätze mit so wenig 
+Aufwand wie möglich realisieren zu können, hat sich der Elternbeirat ein System ausgedacht und programmiert 
+(siehe https://github.com/TaZi-loh/leolino-kids-prio ). Dieses System ist so gestaltet, dass alle Kinder, die nicht 
+gelistet sind in eine Prioritätenliste einsortiert werden. Dabei stehen Kinder weiter oben, je öfter sie früher 
+einen Platz aus einer gelisteten Gruppe angeboten haben. Kinder stehen weiter unten, je öfter sie früher einen 
+freien Platz genutzt haben. Bei Gleichstand entscheidet ein Zufallsmechanismus.
+Die freien Plätze werden nun einfach an die obersten Kinder der Prioritätenliste vergeben. Dazu erstellt 
+Sebastian Ziesche typischerweise eine Ankündigung in der Gruppe "Ankündigungen".
+
 # leolino-kids-prio
 
 [![Release](https://img.shields.io/github/v/release/TaZi-loh/leolino-kids-prio)](https://img.shields.io/github/v/release/TaZi-loh/leolino-kids-prio)
