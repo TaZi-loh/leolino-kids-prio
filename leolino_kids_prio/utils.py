@@ -11,7 +11,7 @@ from multiset import Multiset
 from leolino_kids_prio.constants import GROUP_SIZE
 
 Kid = str
-Group = str
+Group = str  # A, B, C, ...
 Age = Literal["U3", "Ü3"]
 
 
@@ -184,3 +184,31 @@ class Data:
         assert isinstance(prio, int)
         assert isinstance(tiebreaker, int)
         return prio, tiebreaker
+
+
+def all_kids(u3_groups: dict[Group, list[Kid]], ue3_groups: dict[Group, list[Kid]]) -> set[Kid]:
+    """Returns the set of all kids in all groups."""
+    result = set()
+    for kids in u3_groups.values():
+        for kid in kids:
+            result.add(kid)
+    for kids in ue3_groups.values():
+        for kid in kids:
+            result.add(kid)
+    return result
+
+
+def insert_random_line(filename: str | Path, new_line: str) -> None:
+    # Read the file into a list of lines
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+    # Generate a random index
+    index = random.randint(0, len(lines))  # include end of file as a valid position
+
+    # Insert the new line (make sure it ends with a newline character)
+    lines.insert(index, new_line if new_line.endswith('\n') else new_line + '\n')
+
+    # Write the lines back to the file
+    with open(filename, 'w') as file:
+        file.writelines(lines)
