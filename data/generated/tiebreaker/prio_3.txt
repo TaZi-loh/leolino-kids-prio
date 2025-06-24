@@ -20,7 +20,6 @@ Tino
 Ava
 Emilia
 Karlo
-Taro
 Lea Amelie
 Luca
 Hayley Xin
@@ -46,7 +45,6 @@ Emin
 Zsigmond
 Ananya
 Khan
-Yuan
 Lukas
 Valentina
 Giulio

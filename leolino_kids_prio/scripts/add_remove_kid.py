@@ -44,4 +44,4 @@ def add_kid(kid: Kid, age: Age, always_allowed: bool) -> None:
 
 if __name__ == '__main__':
     """this script should be executed, if a kid leaves the daycare and should not be listed anywhere anymore."""
-    # remove_kids(["Timo", "Tina"])
+    remove_kids(["Yuan", "Taro"])
