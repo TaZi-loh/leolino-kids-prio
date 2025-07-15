@@ -20,7 +20,6 @@ Ananya
 Lea Amelie
 Valentin
 Hayley Xin
-Benjamin
 Viola
 Adya
 Leia
@@ -35,7 +34,6 @@ Juna
 Sunny
 Yuan
 Moritz
-Mila
 Emma
 Camille
 Leo
@@ -45,7 +43,6 @@ Marissa
 Taro
 Mani
 Conrad
-Zsigmond
 Ferdinand
 Lian
 Aaron

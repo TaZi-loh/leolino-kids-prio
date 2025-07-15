@@ -3,7 +3,6 @@ Ana Laura
 Camille
 Lea Amelie
 Kylian
-Mila
 Yasmin
 Lars
 Leonie
@@ -15,7 +14,6 @@ Sofia
 Lian
 Aaron
 Moritz
-Benjamin
 Max
 Ananya
 Lisa
@@ -50,7 +48,6 @@ Khan
 Ava
 Juna
 Emma
-Zsigmond
 Felix
 Constantin
 Gabriel

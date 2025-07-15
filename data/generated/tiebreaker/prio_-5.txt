@@ -9,7 +9,6 @@ Juna
 Larissa
 Viola
 Karlo
-Zsigmond
 Caiyi
 Chleo
 Ananya
@@ -29,7 +28,6 @@ Giulio
 Marissa
 Ferdinand
 Liam
-Benjamin
 Tino
 Leonie
 Aaron
@@ -54,5 +52,4 @@ Lukas
 Mani
 Adya
 Emin
-Mila
 Emilia

@@ -1,4 +1,3 @@
-Zsigmond
 Lukas
 Caiyi
 Leo
@@ -13,11 +12,9 @@ Lars
 Emma
 Khan
 Thomas
-Benjamin
 Lian
 Noah
 Marissa
-Mila
 Emilia
 Yasmin
 Juna

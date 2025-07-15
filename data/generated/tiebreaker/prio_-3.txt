@@ -1,7 +1,5 @@
 Felix
-Mila
 Viola
-Benjamin
 Hayley Xin
 Juna
 Yuan
@@ -36,7 +34,6 @@ Chleo
 Tino
 Conrad
 Ferdinand
-Zsigmond
 Sofia
 Adya
 Camille
