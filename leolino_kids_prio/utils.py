@@ -220,6 +220,8 @@ def insert_random_line(filename: str | Path, new_line: str) -> None:
     # Read the file into a list of lines
     with open(filename, 'r') as file:
         lines = file.readlines()
+    if lines[-1][-1] != "\n":
+        lines[-1] = lines[-1] + "\n"
 
     # Generate a random index
     index = random.randint(0, len(lines))  # include end of file as a valid position
