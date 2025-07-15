@@ -30,7 +30,7 @@ def remove_kids(kids: Iterable[Kid]):
             toml.dump(groups, f4)
 
 
-def add_kid(kid: Kid, age: Age, always_allowed: bool) -> None:
+def add_kid(kid: Kid, age: Age, always_allowed: bool, starting_prio: int | None = None) -> None:
     d = Data()
     for file in (d.root / "generated" / "tiebreaker").glob("prio_*.txt"):
         insert_random_line(file, kid)
@@ -39,9 +39,32 @@ def add_kid(kid: Kid, age: Age, always_allowed: bool) -> None:
         aak[age].append(kid)
         with (d.root / "manually_updated" / "always_allowed_kids.toml").open("w", encoding="utf-8") as f:
             toml.dump(aak, f)
-    # todo introduce initial prio and set it to the median prio of the age group for a new kid
+
+    # define starting prios
+    if starting_prio is None:
+        _, _, current_prio_list, _ = d.allowed_and_prio(age, [])
+        prio_values = [d.prio_key(kid) for kid in current_prio_list]
+        starting_prio = prio_values[len(prio_values) // 2][0]  # the median prio
+
+    starting_prio_dict = d.starting_prio
+    assert kid not in starting_prio_dict[age]
+    starting_prio_dict[age][kid] = starting_prio
+    with (d.root / "generated" / "starting_prio.toml").open("w", encoding="utf-8") as f2:
+        toml.dump(starting_prio_dict, f2)
 
 
 if __name__ == '__main__':
     """this script should be executed, if a kid leaves the daycare and should not be listed anywhere anymore."""
-    remove_kids(["Yuan", "Taro"])
+    # remove_kids(["Yuan", "Taro"])
+    # first we need to make sure, that all prio files that need to exist,
+    print("we will now give some new kids some tiebreakers and a starting priority.")
+    for age in ["U3", "Ü3"]:
+        Data().allowed_and_prio(age, [])  # this queries the prio of everybody.
+    for kid in {'Caiyi', }:
+        add_kid(kid, age="U3", always_allowed=False, starting_prio=None)
+    for kid in {'Taro', 'Yuan', 'Sunny', 'Jakob'}:
+        add_kid(kid, age="Ü3", always_allowed=False, starting_prio=None)
+    print("make sure, to run `define_new_groups()` too, to also add the kids to some new group.")
+
+
+
