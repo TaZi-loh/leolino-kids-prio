@@ -54,6 +54,15 @@ class Data:
         with (self.root / "manually_updated" / "always_allowed_kids.toml").open("r", encoding="utf-8") as f:
             return toml.load(f)
 
+    @property
+    def starting_prio(self) -> dict[Age, dict[Kid, int]]:
+        file_path = self.root / "generated" / "starting_prio.toml"
+        if not file_path.exists():
+            with file_path.open("w", encoding="utf-8") as f:
+                toml.dump({"U3": {}, "Ü3": {}}, f)
+        with (self.root / "generated" / "starting_prio.toml").open("r", encoding="utf-8") as f:
+            return toml.load(f)
+
     @cache  # noqa: B019
     def tiebreaker(self, prio: int):
         file_path = self.root / "generated" / "tiebreaker" / f"prio_{prio}.txt"
