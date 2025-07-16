@@ -1,14 +1,12 @@
-Zsigmond
 Valentina
-Mila
 Constantin
+Taro
 Lars
 Lisa
 Kylian
 Sofia
 Juna
 Max
-Camille
 Leia
 Emma
 Thomas
@@ -17,7 +15,6 @@ Nela
 Lian
 Gabriel
 Ana Laura
-Benjamin
 Felix
 Emilia
 Sara
@@ -32,14 +29,16 @@ Leo
 Mani
 Karlo
 Viola
-Leonie
+Jakob
 Giulio
+Sunny
 Yasmin
 Khan
 Chleo
 Lea Amelie
 Damian
 Emin
+Caiyi
 Ananya
 Liam
 Moritz

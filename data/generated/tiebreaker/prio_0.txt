@@ -2,16 +2,12 @@ Hayley Xin
 Emilia
 Adya
 Giulio
-Camille
 Jeremyas-Max
 Noah
 Sofia
-Benjamin
 Max
 Leo
-Leonie
 Khan
-Mila
 Damian
 Felix
 Lars
@@ -26,6 +22,7 @@ Sara
 Nela
 Emma
 Liam
+Jakob
 Tino
 Valentina
 Larissa
@@ -35,6 +32,7 @@ Conrad
 Viola
 Ava
 Valentin
+Sunny
 Robert
 Lea Amelie
 Chleo
@@ -42,12 +40,13 @@ Kylian
 Juna
 Luca
 Lukas
+Taro
 Marissa
 Aaron
 Yasmin
 Lian
 Ferdinand
 Leia
-Zsigmond
 Moritz
 Thomas
+Caiyi
