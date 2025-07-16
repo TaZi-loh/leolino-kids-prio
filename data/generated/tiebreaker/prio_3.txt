@@ -8,6 +8,7 @@ Noah
 Emma
 Thomas
 Valentin
+Caiyi
 Kylian
 Marissa
 Leia
@@ -31,6 +32,7 @@ Damian
 Sara
 Conrad
 Camille
+Sunny
 Benjamin
 Larissa
 Max
@@ -42,12 +44,14 @@ Jeremyas-Max
 Juna
 Yasmin
 Emin
+Taro
 Zsigmond
 Ananya
 Khan
 Lukas
 Valentina
 Giulio
+Jakob
 Lian
 Chleo
 Liam

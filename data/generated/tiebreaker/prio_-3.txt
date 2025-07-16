@@ -1,8 +1,10 @@
+Taro
 Holly
 Moritz
 Max
 Ananya
 Mani
+Caiyi
 Sofia
 Robert
 Karlo
@@ -51,3 +53,5 @@ Emin
 Hayley Xin
 Mila
 Adya
+Sunny
+Jakob

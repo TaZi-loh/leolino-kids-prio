@@ -2,6 +2,7 @@ Kylian
 Felix
 Ferdinand
 Holly
+Caiyi
 Karlo
 Gabriel
 Leia
@@ -17,6 +18,7 @@ Valentin
 Aaron
 Damian
 Camille
+Jakob
 Mila
 Adya
 Ana Laura
@@ -28,6 +30,7 @@ Ananya
 Noah
 Leo
 Jeremyas-Max
+Sunny
 Emin
 Yasmin
 Zsigmond
@@ -49,5 +52,6 @@ Valentina
 Moritz
 Lea Amelie
 Ava
+Taro
 Lars
 Emma

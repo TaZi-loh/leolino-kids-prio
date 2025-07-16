@@ -1,4 +1,5 @@
 Zsigmond
+Caiyi
 Sofia
 Constantin
 Sara
@@ -30,12 +31,15 @@ Nela
 Leonie
 Thomas
 Lukas
+Sunny
+Taro
 Gabriel
 Juna
 Max
 Lian
 Emma
 Tino
+Jakob
 Jeremyas-Max
 Karlo
 Valentin
