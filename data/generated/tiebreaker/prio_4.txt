@@ -8,7 +8,6 @@ Ferdinand
 Adya
 Ava
 Jakob
-Camille
 Leia
 Chleo
 Lisa
@@ -16,7 +15,6 @@ Marissa
 Tino
 Karlo
 Valentin
-Zsigmond
 Taro
 Yasmin
 Gabriel
@@ -25,7 +23,6 @@ Lars
 Damian
 Thomas
 Aaron
-Benjamin
 Robert
 Valentina
 Holly
@@ -41,7 +38,6 @@ Max
 Larissa
 Ana Laura
 Noah
-Leonie
 Conrad
 Sunny
 Viola
@@ -50,7 +46,6 @@ Ananya
 Luca
 Sara
 Moritz
-Mila
 Nela
 Caiyi
 Leo

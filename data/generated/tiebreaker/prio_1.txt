@@ -12,7 +12,6 @@ Ana Laura
 Emilia
 Larissa
 Lukas
-Camille
 Lea Amelie
 Sofia
 Lian
@@ -23,13 +22,11 @@ Noah
 Ananya
 Karlo
 Giulio
-Benjamin
 Mani
 Jakob
 Sara
 Conrad
 Liam
-Mila
 Gabriel
 Jeremyas-Max
 Viola
@@ -40,7 +37,6 @@ Leia
 Max
 Lars
 Aaron
-Zsigmond
 Ava
 Felix
 Marissa
@@ -49,7 +45,6 @@ Ferdinand
 Sunny
 Kylian
 Khan
-Leonie
 Moritz
 Valentina
 Juna
