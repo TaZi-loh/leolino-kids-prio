@@ -6,15 +6,15 @@ from leolino_kids_prio.utils import Data, all_kids
 if __name__ == '__main__':
     new_u3_groups = {
         "A": ["Lian", "Luca", "Khan", "Leia", "Giulio", "Thomas"],
-        "B": ["Ava", "Constantin", "Emma", "Leia", "Leonie"],
+        "B": ["Ava", "Constantin", "Emma", "Leia", "Caiyi"],
         "C": ["Viola", "Robert", "Adya", "Leia", "Emilia"],
         "D": ["Tino", "Lisa", "Marissa", "Leia", "Aaron"],
     }
     new_ue3_groups = {
-        "A": ["Benjamin", "Mila", "Sofia", "Chleo", "Sara", "Ana Laura", "Larissa", "Felix", "Zsigmond"],
-        "B": ["Conrad", "Ferdinand", "Nela", "Damian", "Kylian", "Valentina", "Lukas", "Valentin"],
-        "C": ["Liam", "Hayley Xin", "Mani", "Moritz", "Lea Amelie", "Emin", "Gabriel", "Karlo"],
-        "D": ["Jeremyas-Max", "Ananya", "Juna", "Yasmin", "Max", "Camille", "Lars"],
+        "A": ["Sunny", "Noah", "Sofia", "Chleo", "Sara", "Ana Laura", "Larissa", "Felix", "Jakob", "Holly"],
+        "B": ["Conrad", "Ferdinand", "Nela", "Damian", "Kylian", "Valentina", "Lukas", "Valentin", "Noah", "Holly"],
+        "C": ["Liam", "Hayley Xin", "Mani", "Moritz", "Lea Amelie", "Emin", "Gabriel", "Karlo", "Taro", "Noah", "Holly"],
+        "D": ["Leo", "Jeremyas-Max", "Ananya", "Juna", "Yasmin", "Max", "Lars"],
     }
 
     d = Data()
