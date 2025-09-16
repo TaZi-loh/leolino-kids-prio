@@ -188,7 +188,16 @@ class Data:
     def prio_key(self, kid: Kid) -> tuple[int, int]:
         unused_prio = len([date for date, kids in self.unused_days_history.items() if kid in kids])
         used_prio = len([date for date, kids in self.used_free_spots_history.items() if kid in kids])
-        prio = used_prio - unused_prio
+        starting_prio_u3 = self.starting_prio["U3"].get(kid)
+        starting_prio_ue3 = self.starting_prio["Ü3"].get(kid)
+        assert starting_prio_u3 is None or starting_prio_ue3 is None, "duplicated kid name."
+        if starting_prio_u3 is not None:
+            starting_prio = starting_prio_u3
+        elif starting_prio_ue3 is not None:
+            starting_prio = starting_prio_ue3
+        else:
+            starting_prio = 0  # these are the kids from the beginning, which we did not list explicitely
+        prio = used_prio - unused_prio + starting_prio
         tiebreaker = self.tiebreaker(prio).index(kid)
         assert isinstance(prio, int)
         assert isinstance(tiebreaker, int)
