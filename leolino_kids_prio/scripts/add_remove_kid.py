@@ -54,15 +54,17 @@ def add_kid(kid: Kid, age: Age, always_allowed: bool, starting_prio: int | None 
 
 
 if __name__ == '__main__':
-    """this script should be executed, if a kid leaves the daycare and should not be listed anywhere anymore."""
-    # remove_kids(["Yuan", "Taro"])
+    """
+    To add or remove kids, adjust this script and afterward, run `define_new_groups()`.
+    """
+    remove_kids(["Caiyi", "Chleo", "Emin", "Mani", "Valentin", "Ferdinand", "Larissa", "Ana Laura"])
     # first we need to make sure, that all prio files that need to exist,
     print("we will now give some new kids some tiebreakers and a starting priority.")
     for age in ["U3", "Ü3"]:
         Data().allowed_and_prio(age, [])  # this queries the prio of everybody.
-    for kid in {'Caiyi', }:
+    for kid in ["Cloe", "Mattis", "Adam", ]:
         add_kid(kid, age="U3", always_allowed=False, starting_prio=None)
-    for kid in {'Taro', 'Sunny', 'Jakob'}:
+    for kid in ['Lennart', 'Mai An', 'Maximilian', "Emilia (Ü3)"]:
         add_kid(kid, age="Ü3", always_allowed=False, starting_prio=None)
     print("make sure, to run `define_new_groups()` too, to also add the kids to some new group.")
 
