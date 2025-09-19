@@ -1,8 +1,8 @@
 [U3]
-A = [ "Lian", "Luca", "Khan", "Giulio", "Thomas",]
-B = [ "Ava", "Constantin", "Emma", "Cloe", "Mattis",]
-C = [ "Viola", "Robert", "Adya", "Emilia", "Leia",]
-D = [ "Tino", "Lisa", "Marissa", "Aaron", "Adam",]
+"1" = [ "Lian", "Luca", "Khan", "Giulio", "Thomas",]
+"2" = [ "Ava", "Constantin", "Emma", "Cloe", "Mattis",]
+"3" = [ "Viola", "Robert", "Adya", "Emilia", "Leia",]
+"4" = [ "Tino", "Lisa", "Marissa", "Aaron", "Adam",]
 
 ["Ü3"]
 A = [ "Sofia", "Sara", "Felix", "Jakob", "Sunny", "Noah", "Lennart",]

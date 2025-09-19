@@ -14,7 +14,7 @@ if __name__ == '__main__':
     full_ann = d.full_announcement_and_toml_update(
         date="12.09.2025",
         u3_groups=["C", "D"],
-        # u3_groups=["A", "B", "C", "D"],
+        # u3_groups=["1", "2", "3", "4"],
         u3_stay_home_kids=["Leia", "Robert"],
         # ue3_groups=["A", "B", "C", "D"],
         ue3_groups=["A", "C", "D"],
