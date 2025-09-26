@@ -1,38 +1,38 @@
 Constantin
 Lisa
 Robert
-Chleo
 Hayley Xin
+Mattis
 Adya
-Emin
 Taro
 Emma
 Luca
-Ana Laura
 Emilia
-Larissa
 Lukas
 Lea Amelie
 Sofia
 Lian
+Adam
 Nela
-Caiyi
 Tino
 Noah
 Ananya
 Karlo
 Giulio
-Mani
 Jakob
 Sara
 Conrad
+Mai An
+Cloe
 Liam
 Gabriel
 Jeremyas-Max
+Lennart
 Viola
 Holly
 Damian
 Yasmin
+Maximilian
 Leia
 Max
 Lars
@@ -40,8 +40,6 @@ Aaron
 Ava
 Felix
 Marissa
-Valentin
-Ferdinand
 Sunny
 Kylian
 Khan

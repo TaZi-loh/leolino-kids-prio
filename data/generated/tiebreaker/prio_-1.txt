@@ -1,36 +1,36 @@
-Caiyi
 Sofia
 Constantin
 Sara
-Emin
 Luca
 Moritz
 Viola
+Cloe
+Lennart
 Ananya
 Kylian
 Holly
+Adam
 Emilia
 Damian
 Hayley Xin
 Robert
-Mani
-Ana Laura
 Aaron
 Noah
-Ferdinand
 Yasmin
 Conrad
-Chleo
 Leia
 Felix
 Giulio
 Nela
 Thomas
 Lukas
+Mattis
 Sunny
 Taro
 Gabriel
+Mai An
 Juna
+Maximilian
 Max
 Lian
 Emma
@@ -38,7 +38,6 @@ Tino
 Jakob
 Jeremyas-Max
 Karlo
-Valentin
 Lea Amelie
 Leo
 Lars
@@ -49,4 +48,3 @@ Marissa
 Ava
 Valentina
 Khan
-Larissa
