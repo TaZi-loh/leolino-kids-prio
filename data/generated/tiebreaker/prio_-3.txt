@@ -7,6 +7,7 @@ Ananya
 Sofia
 Robert
 Karlo
+Sami
 Giulio
 Marissa
 Mattis
@@ -15,6 +16,7 @@ Jeremyas-Max
 Liam
 Yasmin
 Felix
+Hagen
 Lars
 Noah
 Kylian
@@ -24,6 +26,7 @@ Conrad
 Leia
 Aaron
 Gabriel
+Aurelian
 Lian
 Lisa
 Luca
@@ -32,8 +35,11 @@ Valentina
 Lea Amelie
 Thomas
 Cloe
+Yian
 Tino
 Nela
+Sophia G.
+Louise
 Emilia
 Viola
 Constantin
@@ -42,6 +48,7 @@ Juna
 Sara
 Lukas
 Ava
+Yuna
 Lennart
 Damian
 Hayley Xin

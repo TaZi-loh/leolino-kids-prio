@@ -1,10 +1,13 @@
 Constantin
+Sophia G.
 Jeremyas-Max
+Yuna
 Kylian
 Lea Amelie
 Adya
 Ava
 Jakob
+Louise
 Mai An
 Leia
 Lisa
@@ -12,6 +15,7 @@ Marissa
 Tino
 Karlo
 Taro
+Aurelian
 Yasmin
 Gabriel
 Adam
@@ -22,6 +26,7 @@ Thomas
 Aaron
 Robert
 Valentina
+Sami
 Holly
 Lian
 Juna
@@ -34,6 +39,7 @@ Emma
 Felix
 Lukas
 Max
+Yian
 Noah
 Conrad
 Sunny
@@ -46,5 +52,6 @@ Sara
 Cloe
 Moritz
 Nela
+Hagen
 Leo
 Liam
