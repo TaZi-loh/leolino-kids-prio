@@ -1,6 +1,9 @@
 Valentina
+Hagen
 Constantin
 Mai An
+Sami
+Aurelian
 Taro
 Lars
 Lisa
@@ -9,6 +12,7 @@ Sofia
 Juna
 Max
 Leia
+Sophia G.
 Emma
 Thomas
 Holly
@@ -17,6 +21,7 @@ Lennart
 Lian
 Gabriel
 Felix
+Yuna
 Emilia
 Sara
 Noah
@@ -27,6 +32,7 @@ Leo
 Karlo
 Viola
 Jakob
+Louise
 Giulio
 Sunny
 Yasmin
@@ -34,6 +40,7 @@ Khan
 Lea Amelie
 Damian
 Mattis
+Yian
 Ananya
 Liam
 Moritz

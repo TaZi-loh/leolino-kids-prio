@@ -1,8 +1,11 @@
 Ananya
+Hagen
 Adya
 Lennart
 Mattis
+Louise
 Emma
+Yian
 Leia
 Conrad
 Giulio
@@ -27,8 +30,10 @@ Sofia
 Valentina
 Tino
 Damian
+Aurelian
 Thomas
 Maximilian
+Sami
 Noah
 Kylian
 Holly
@@ -41,8 +46,10 @@ Felix
 Ava
 Juna
 Jakob
+Yuna
 Yasmin
 Karlo
+Sophia G.
 Lars
 Liam
 Khan
