@@ -12,14 +12,13 @@ if __name__ == '__main__':
     """
     d = Data()
     full_ann = d.full_announcement_and_toml_update(
-        date="12.09.2025",
-        u3_groups=["C", "D"],
+        date="12.11.2025",
+        u3_groups=["1", "2"],
         # u3_groups=["1", "2", "3", "4"],
-        u3_stay_home_kids=["Leia", "Robert"],
+        u3_stay_home_kids=["Khan", "Ava"],
         # ue3_groups=["A", "B", "C", "D"],
-        ue3_groups=["A", "C", "D"],
+        ue3_groups=["A", "B", "C", "D"],
         ue3_stay_home_kids=[
-            "Noah",
             # Schulkinder
             "Ana Laura",
             "Valentin",
