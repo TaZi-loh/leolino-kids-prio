@@ -15,6 +15,7 @@ if __name__ == '__main__':
         "A": [ "Sofia", "Sara", "Felix", "Jakob", "Sunny", "Noah", "Lennart", "Emma", "Hagen", "Aurelian", "Hayley Xin", ],
         "B": [ "Conrad", "Nela", "Damian", "Kylian", "Valentina", "Lukas", "Mai An", "Holly", "Thomas", "Luca", "Khan", ],
         "C": [ "Liam", "Sophia G.", "Moritz", "Lea Amelie", "Gabriel", "Karlo", "Taro", "Maximilian", "Lian", ],
+        "A": [ "Sofia K.", "Sara", "Felix", "Jakob", "Sunny", "Noah", "Lennart", "Emma", "Hagen", "Aurelian", "Hayley Xin", "Ava", ],
         "D": [ "Leo", "Jeremyas-Max", "Ananya", "Juna", "Yasmin", "Max", "Lars", "Emilia", "Louise", "Sami"],
     }
 
