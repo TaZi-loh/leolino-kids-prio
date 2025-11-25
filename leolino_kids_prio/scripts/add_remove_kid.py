@@ -57,14 +57,14 @@ if __name__ == '__main__':
     """
     To add or remove kids, adjust this script and afterward, run `define_new_groups()`.
     """
-    remove_kids([])
+    remove_kids(["Viola", "Max"])
     # first we need to make sure, that all prio files that need to exist,
     print("we will now give some new kids some tiebreakers and a starting priority.")
     for age in ["U3", "Ü3"]:
         Data().allowed_and_prio(age, [])  # this queries the prio of everybody.
-    for kid in ["Yian", "Yuna", ]:
+    for kid in ["Liam U3", "Sophia", "Aris"]:
         add_kid(kid, age="U3", always_allowed=False, starting_prio=None)
-    for kid in ["Hagen", "Aurelian", "Sophia G.", "Louise", "Sami", ]:
+    for kid in ["Liam Ü3", "Michelangelo", ]:
         add_kid(kid, age="Ü3", always_allowed=False, starting_prio=None)
     print("make sure, to run `define_new_groups()` too, to also add the kids to some new group.")
 

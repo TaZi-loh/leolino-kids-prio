@@ -1,5 +1,6 @@
 Kylian
 Felix
+Aris
 Holly
 Maximilian
 Karlo
@@ -7,6 +8,7 @@ Gabriel
 Mattis
 Leia
 Giulio
+Liam Ü3
 Robert
 Marissa
 Tino
@@ -18,7 +20,9 @@ Damian
 Jakob
 Adya
 Nela
+Michelangelo
 Hagen
+Sophia
 Constantin
 Yian
 Lian
@@ -36,20 +40,18 @@ Luca
 Lisa
 Khan
 Juna
-Viola
-Max
 Thomas
 Sara
 Emilia
 Sophia G.
 Mai An
-Sofia
+Sofia K.
 Yuna
-Liam
 Valentina
 Sami
 Moritz
 Lea Amelie
+Liam U3
 Ava
 Louise
 Taro
