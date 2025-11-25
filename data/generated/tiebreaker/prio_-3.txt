@@ -1,8 +1,8 @@
 Adam
 Taro
+Michelangelo
 Holly
 Moritz
-Max
 Ananya
 Sofia K.
 Robert
@@ -13,12 +13,12 @@ Marissa
 Mattis
 Leo
 Jeremyas-Max
-Liam
 Yasmin
 Felix
 Hagen
 Lars
 Noah
+Liam U3
 Kylian
 Maximilian
 Emma
@@ -28,6 +28,7 @@ Aaron
 Gabriel
 Aurelian
 Lian
+Sophia
 Lisa
 Luca
 Mai An
@@ -36,16 +37,17 @@ Lea Amelie
 Thomas
 Cloe
 Yian
+Liam Ü3
 Tino
 Nela
 Sophia G.
 Louise
 Emilia
-Viola
 Constantin
 Khan
 Juna
 Sara
+Aris
 Lukas
 Ava
 Yuna
