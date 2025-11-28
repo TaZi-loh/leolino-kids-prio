@@ -203,6 +203,29 @@ class Data:
         assert isinstance(tiebreaker, int)
         return prio, tiebreaker
 
+    def write_future_prio_list_to_markdown(self) -> None:
+        for age in ["U3", "Ü3"]:
+            _, _, prio_list, _ = self.allowed_and_prio(age, [])
+            group_names = sorted(self.groups[age].keys())
+            with (Path(__file__).parent.parent / f"Prioliste {age}.md").open("w", encoding="utf-8") as f:
+                f.write(f"# Aktuelle Prioliste der {age} Kinder\n")
+                f.write("Je weiter oben ein Kind in der Liste steht, desto höher ist seine aktuelle Priorität.\n")
+                f.write(
+                    "Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung kommen können wird, "
+                    "kann man schauen, wie weit oben es in seiner Spalte steht."
+                )
+                f.write(f"|{'|'.join(group_names)}|\n")
+                f.write(f"|{'-|'*len(group_names)}\n")
+                for child in prio_list:
+                    f.write("|")
+                    for group_name in group_names:
+                        if child in self.groups[age][group_name]:
+                            f.write(child)
+                        f.write("|")
+                    f.write("\n")
+
+
+
 
 def all_kids(u3_groups: dict[Group, list[Kid]], ue3_groups: dict[Group, list[Kid]]) -> set[Kid]:
     """Returns the set of all kids in all groups."""
@@ -232,3 +255,5 @@ def insert_random_line(filename: str | Path, new_line: str) -> None:
     # Write the lines back to the file
     with open(filename, 'w') as file:
         file.writelines(lines)
+
+
