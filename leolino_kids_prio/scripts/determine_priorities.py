@@ -21,4 +21,6 @@ if __name__ == '__main__':
         ue3_stay_home_kids=["Jakob", "Moritz", "Emilia", ],
     )
     print(full_ann)
+    print("\n\nupdating future prio list...")
+    d.write_future_prio_list_to_markdown()
 
