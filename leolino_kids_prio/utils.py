@@ -212,7 +212,7 @@ class Data:
                 f.write("Je weiter oben ein Kind in der Liste steht, desto höher ist seine aktuelle Priorität.\n")
                 f.write(
                     "Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung kommen können wird, "
-                    "kann man schauen, wie weit oben es in seiner Spalte steht."
+                    "kann man schauen, wie weit oben es in seiner Spalte steht.\n\n"
                 )
                 f.write(f"|{'|'.join(group_names)}|\n")
                 f.write(f"|{'-|'*len(group_names)}\n")
