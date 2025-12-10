@@ -6,18 +6,18 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 |-|-|-|-|
 |||Robert||
 |||Leia||
-||||Aris|
 |Yian||||
 |Giulio||||
-||||Marissa|
 |Khan||||
+||||Aris|
 ||Mattis|||
+||||Marissa|
 ||||Tino|
-||||Aaron|
 ||Constantin|||
 ||Cloe|||
 ||Adam|||
 |Yuna||||
 |Liam U3||||
 |||Adya||
+||||Aaron|
 |||Sophia||
