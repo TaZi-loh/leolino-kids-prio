@@ -16,9 +16,9 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 |Felix||||
 |Jakob||||
 ||Valentina|||
+||||Jeremyas-Max|
 |||Liam Ü3||
 ||||Leo|
-||||Michelangelo|
 ||||Lars|
 |||Maximilian||
 |||Hagen||
@@ -31,11 +31,11 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 |||Taro||
 ||||Yasmin|
 |Lennart||||
+||||Michelangelo|
 ||Lukas|||
 |||Lea Amelie||
 ||Nela|||
 ||Mai An|||
-||||Jeremyas-Max|
 ||Kylian|||
 ||Conrad|||
 |||Lian||
