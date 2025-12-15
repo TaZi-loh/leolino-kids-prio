@@ -79,12 +79,12 @@ class Data:
         """Returns the set of all kids in either U3 or Ü3."""
         return set.union(*(set(self.groups[age][group]) for group in self.groups[age]))
 
-    def allowed_and_prio(self, age: Age, groups: list[Group]) -> tuple[list[Kid], int, list[Kid], Multiset[Kid]]:
+    def allowed_and_prio(self, age: Age, allowed_groups: list[Group]) -> tuple[list[Kid], int, list[Kid], Multiset[Kid]]:
         """Computes the list of allowed kids (for U3 or Ü3), the number of free spots and a priority list of other kids.
 
         Args:
             age:
-            groups:
+            allowed_groups:
 
         Returns:
             - allowed_kids: a list of kids that can definitely come, because they are in one of the allowed groups
@@ -92,10 +92,10 @@ class Data:
             - prio: a list of all other kids sorted by priority (early in the list means higher priority)
             - duplicates: multiset of kids that were duplicated because they appear in more than one group.
         """
-        allowed_kids_with_duplicates = Multiset.combine(*(Multiset(self.groups[age][group]) for group in groups)) if len(groups) > 0 else Multiset()
+        allowed_kids_with_duplicates = Multiset.combine(*(Multiset(self.groups[age][group]) for group in allowed_groups)) if len(allowed_groups) > 0 else Multiset()
         allowed_kids_no_duplicates = set(allowed_kids_with_duplicates)
         duplicates = allowed_kids_with_duplicates.difference(allowed_kids_no_duplicates)
-        nr_free_spots = len(groups) * GROUP_SIZE[age] - len(allowed_kids_no_duplicates)
+        nr_free_spots = len(allowed_groups) * GROUP_SIZE[age] - len(allowed_kids_no_duplicates)
         other_kids = list(self.all_kids(age) - allowed_kids_no_duplicates)
         # other_kids_w_prios = [(kid, self.prio_key(kid)) for kid in other_kids]
         prio = sorted(other_kids, key=lambda kid: self.prio_key(kid))
@@ -145,9 +145,12 @@ class Data:
                 stay_home_kids = [kid for kid in stay_home_kids if kid != kid_highest_prio]
         return result, stay_home_kids
 
-    def full_announcement_and_toml_update(self, date: str, u3_groups: list[Group], u3_stay_home_kids: list[Kid], ue3_groups: list[Group], ue3_stay_home_kids: list[Kid]) -> str:
-        ann_u3, fill_ups_u3, leftover_stay_home_kids_u3 = self.announcement_age_group(date, "U3", u3_groups, u3_stay_home_kids)
-        ann_ue3, fill_ups_ue3, leftover_stay_home_kids_ue3 = self.announcement_age_group(date, "Ü3", ue3_groups, ue3_stay_home_kids)
+    def full_announcement_and_toml_update(self, date: str, u3_allowed_groups: list[Group], u3_stay_home_kids: list[Kid],
+                                          ue3_allowed_groups: list[Group], ue3_stay_home_kids: list[Kid]) -> str:
+        ann_u3, fill_ups_u3, leftover_stay_home_kids_u3 = self.announcement_age_group(date, "U3", u3_allowed_groups,
+                                                                                      u3_stay_home_kids)
+        ann_ue3, fill_ups_ue3, leftover_stay_home_kids_ue3 = self.announcement_age_group(date, "Ü3", ue3_allowed_groups,
+                                                                                         ue3_stay_home_kids)
         announcement = f"{ann_u3}\n\n\n\n{ann_ue3}"
         print(announcement)
 
@@ -163,19 +166,19 @@ class Data:
 
         allowed_groups = self.allowed_groups_history
         allowed_groups[date] = {}
-        allowed_groups[date]["U3"] = u3_groups
-        allowed_groups[date]["Ü3"] = ue3_groups
+        allowed_groups[date]["U3"] = u3_allowed_groups
+        allowed_groups[date]["Ü3"] = ue3_allowed_groups
         with (self.root / "manually_updated" / "allowed_groups.toml").open("w", encoding="utf-8") as f:
             toml.dump(allowed_groups, f)
 
         return announcement
 
-    def announcement_age_group(self, date: str, age: Age, groups: list[Group], stay_home_kids: list[Kid]) -> tuple[str, list[tuple[Kid, Optional[Kid], str]], list[Kid]]:
-        allowed_kids, nr_free_spots, prio, duplicates = self.allowed_and_prio(age, groups)
+    def announcement_age_group(self, date: str, age: Age, allowed_groups: list[Group], stay_home_kids: list[Kid]) -> tuple[str, list[tuple[Kid, Optional[Kid], str]], list[Kid]]:
+        allowed_kids, nr_free_spots, prio, duplicates = self.allowed_and_prio(age, allowed_groups)
         fill_ups, leftover_stay_home_kids = self.fill_up(prio, nr_free_spots, duplicates, stay_home_kids)
         fill_ups_ = [f"{fu[0]} ({"" if fu[1] is None else fu[1]}{fu[2]})" for fu in fill_ups]
 
-        result = f"Am {date} dürfen die {age} Gruppen {groups} in die Kita kommen. Das heißt, die folgenden Kinder dürfen kommen:\n"
+        result = f"Am {date} dürfen die {age} Gruppen {allowed_groups} in die Kita kommen. Das heißt, die folgenden Kinder dürfen kommen:\n"
         result += f"{allowed_kids}\n\n"
         result += f"Es gibt {nr_free_spots} freie Plätze, die mit Kindern von der Prioritätenliste gefüllt werden können. Diese sieht aktuell so aus:\n"
         result += f"{prio}\n\n"
