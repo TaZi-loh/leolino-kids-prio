@@ -11,12 +11,8 @@ if __name__ == '__main__':
     run the script in debug mode up to the printing of the announcement.
     """
     d = Data()
-    full_ann = d.full_announcement_and_toml_update(
-        date="19.05.2025",
-        u3_groups=["B", "C"],
-        u3_stay_home_kids=[],
-        ue3_groups=["A", "B", "C", "D"],
-        ue3_stay_home_kids=[],
-    )
+    full_ann = d.full_announcement_and_toml_update(date="19.05.2025", u3_allowed_groups=["B", "C"],
+                                                   u3_stay_home_kids=[], ue3_allowed_groups=["A", "B", "C", "D"],
+                                                   ue3_stay_home_kids=[])
     print(full_ann)
 
