@@ -27,7 +27,6 @@ Hagen
 Benicio
 Sophia
 Constantin
-Yian
 Lian
 Ivayla
 Cloe
@@ -36,7 +35,6 @@ Ananya
 Aurelian
 Noah
 Leo
-Lennart
 Jeremyas-Max
 Sunny
 Yasmin

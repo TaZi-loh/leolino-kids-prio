@@ -23,7 +23,6 @@ Emma
 Thomas
 Holly
 Nela
-Lennart
 Lian
 Gabriel
 Felix
@@ -47,7 +46,6 @@ Khan
 Lea Amelie
 Eleonora
 Mattis
-Yian
 Ananya
 Moritz
 Leon

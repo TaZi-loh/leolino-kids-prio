@@ -4,7 +4,6 @@ Moritz
 Eleonora
 Oskar
 Lisa
-Lennart
 Noah
 Emma
 Thomas
@@ -26,7 +25,6 @@ Tino
 Maximilian
 Ava
 Karlo
-Yian
 Hagen
 Lea Amelie
 Luca

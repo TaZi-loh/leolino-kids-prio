@@ -14,7 +14,6 @@ Michelangelo
 Felix
 Yuna
 Adam
-Yian
 Lars
 Constantin
 Holly
@@ -61,6 +60,5 @@ Lian
 Sophia
 Leia
 Mai An
-Lennart
 Moritz
 Thomas
