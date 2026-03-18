@@ -6,16 +6,16 @@ from leolino_kids_prio.utils import Data, all_kids
 if __name__ == '__main__':
     """This should be ran after `add_remove_kids()` was run."""
     new_u3_groups = {
-        "1": ["Giulio", "Yian", "Yuna", "Khan", "Liam U3",],
-        "2": ["Mattis", "Constantin", "Adam", "Cloe", ],
-        "3": ["Leia", "Robert", "Adya", "Sophia"],
-        "4": ["Tino", "Aris", "Marissa", "Aaron"],
+        "1": ["Giulio", "Ivayla", "Yuna", "Khan", "Liam U3",],
+        "2": ["Mattis", "Constantin", "Adam", "Cloe", "Leon", "Saim"],
+        "3": ["Leia", "Robert", "Adya", "Sophia", "Benicio", "Eleonora"],
+        "4": ["Tino", "Aris", "Marissa", "Aaron", "Oskar"],
     }
     new_ue3_groups = {
-        "A": [ "Sofia K.", "Sara", "Felix", "Jakob", "Sunny", "Noah", "Lennart", "Emma", "Ava", "Aurelian", "Hayley Xin", ],
-        "B": [ "Conrad", "Nela", "Damian", "Kylian", "Valentina", "Lukas", "Mai An", "Holly", "Thomas", "Luca", "Lisa", ],
-        "C": [ "Liam Ü3", "Sophia G.", "Moritz", "Lea Amelie", "Gabriel", "Karlo", "Taro", "Maximilian", "Lian", "Hagen", ],
-        "D": [ "Leo", "Jeremyas-Max", "Ananya", "Juna", "Yasmin", "Michelangelo", "Lars", "Emilia", "Louise", "Sami"],
+        "A": [ "Sofia K.", "Sara", "Felix", "Jakob", "Sunny", "Noah", "Emma", "Ava", "Aurelian", "Hayley Xin", ],
+        "B": [ "Conrad", "Nela", "Kylian", "Valentina", "Lukas", "Mai An", "Holly", "Thomas", "Luca", "Lisa", "Henry", ],
+        "C": [ "Liam Ü3", "Sophia G.", "Moritz", "Lea Amelie", "Gabriel", "Karlo", "Taro", "Maximilian", "Lian", "Hagen", "Oliver", ],
+        "D": [ "Leo", "Jeremyas-Max", "Ananya", "Juna", "Yasmin", "Michelangelo", "Lars", "Louise", "Sami", "Malien"],
     }
 
     d = Data()

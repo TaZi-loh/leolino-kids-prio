@@ -1,4 +1,5 @@
 Constantin
+Ivayla
 Sophia G.
 Jeremyas-Max
 Michelangelo
@@ -23,15 +24,17 @@ Aurelian
 Yasmin
 Gabriel
 Adam
-Emilia
+Benicio
+Eleonora
+Oskar
 Lars
-Damian
 Thomas
 Aaron
 Robert
 Valentina
 Sami
 Holly
+Henry
 Lian
 Juna
 Khan
@@ -40,14 +43,15 @@ Maximilian
 Hayley Xin
 Mattis
 Emma
+Oliver
+Malien
 Felix
 Liam Ü3
 Lukas
-Yian
+Saim
 Noah
 Conrad
 Sunny
-Lennart
 Sofia K.
 Ananya
 Luca
@@ -55,5 +59,6 @@ Sara
 Cloe
 Moritz
 Nela
+Leon
 Hagen
 Leo
