@@ -1,5 +1,6 @@
 Sunny
 Robert
+Malien
 Cloe
 Nela
 Khan
@@ -7,8 +8,11 @@ Liam U3
 Lukas
 Louise
 Mai An
+Eleonora
 Thomas
+Saim
 Valentina
+Ivayla
 Maximilian
 Adam
 Maximilian
@@ -18,7 +22,6 @@ Lars
 Mai An
 Constantin
 Lennart
-Emilia
 Leia
 Moritz
 Noah
@@ -27,8 +30,8 @@ Yuna
 Cloe
 Maximilian
 Aaron
+Oliver
 Sara
-Damian
 Taro
 Michelangelo
 Aris
@@ -51,10 +54,13 @@ Sami
 Gabriel
 Lennart
 Giulio
+Henry
+Oskar
 Cloe
 Mattis
 Sophia G.
 Leo
+Leon
 Juna
 Sophia
 Karlo
@@ -63,6 +69,7 @@ Aurelian
 Holly
 Lian
 Cloe
+Benicio
 Mattis
 Adam
 Hagen

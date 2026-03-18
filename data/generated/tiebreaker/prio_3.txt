@@ -1,15 +1,20 @@
 Adya
 Lars
 Moritz
+Eleonora
+Oskar
 Lisa
 Lennart
 Noah
 Emma
 Thomas
+Ivayla
 Cloe
 Aris
 Kylian
+Henry
 Marissa
+Benicio
 Leia
 Felix
 Adam
@@ -20,7 +25,6 @@ Liam Ü3
 Tino
 Maximilian
 Ava
-Emilia
 Karlo
 Yian
 Hagen
@@ -31,7 +35,7 @@ Yuna
 Robert
 Nela
 Constantin
-Damian
+Saim
 Sara
 Conrad
 Sunny
@@ -42,7 +46,9 @@ Holly
 Sophia
 Mai An
 Jeremyas-Max
+Malien
 Juna
+Oliver
 Yasmin
 Taro
 Ananya
@@ -54,6 +60,7 @@ Sophia G.
 Giulio
 Liam U3
 Jakob
+Leon
 Lian
 Aurelian
 Mattis

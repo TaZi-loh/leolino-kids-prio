@@ -6,17 +6,19 @@ Luca
 Moritz
 Cloe
 Lennart
+Benicio
 Sophia G.
 Ananya
 Kylian
 Holly
+Oliver
 Adam
-Emilia
 Hagen
-Damian
 Liam U3
+Henry
 Yuna
 Hayley Xin
+Saim
 Sami
 Robert
 Aaron
@@ -26,18 +28,21 @@ Conrad
 Aurelian
 Leia
 Sophia
+Eleonora
 Felix
 Giulio
 Nela
 Thomas
 Michelangelo
 Lukas
+Oskar
 Mattis
 Sunny
 Taro
 Gabriel
 Mai An
 Juna
+Ivayla
 Yian
 Maximilian
 Louise
@@ -45,6 +50,7 @@ Lian
 Emma
 Tino
 Jakob
+Malien
 Jeremyas-Max
 Karlo
 Lea Amelie
@@ -57,3 +63,4 @@ Marissa
 Ava
 Valentina
 Khan
+Leon

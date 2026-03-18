@@ -2,6 +2,7 @@ Valentina
 Hagen
 Constantin
 Aris
+Malien
 Mai An
 Michelangelo
 Sami
@@ -12,8 +13,11 @@ Lars
 Lisa
 Kylian
 Sofia K.
+Oliver
 Juna
+Oskar
 Leia
+Henry
 Sophia G.
 Emma
 Thomas
@@ -23,8 +27,8 @@ Lennart
 Lian
 Gabriel
 Felix
+Saim
 Yuna
-Emilia
 Sara
 Noah
 Lukas
@@ -37,18 +41,21 @@ Louise
 Giulio
 Sunny
 Yasmin
+Ivayla
 Liam Ü3
 Khan
 Lea Amelie
-Damian
+Eleonora
 Mattis
 Yian
 Ananya
 Moritz
+Leon
 Ava
 Hayley Xin
 Sophia
 Adam
+Benicio
 Cloe
 Luca
 Adya
