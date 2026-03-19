@@ -12,13 +12,13 @@ if __name__ == '__main__':
     """
     d = Data()
     full_ann = d.full_announcement_and_toml_update(
-        date="18.03.2026",
+        date="19.03.2026",
         u3_allowed_groups=["1", "2", "3", "4"],
         # u3_allowed_groups=["3", "4"],
         u3_stay_home_kids=[],
         # ue3_allowed_groups=["A", "B", "C", "D"],
-        ue3_allowed_groups=["A", "C", "D"],
-        ue3_stay_home_kids=["Karlo", "Damian", "Hailey", "Valentina"],
+        ue3_allowed_groups=["A", "B", "D"],
+        ue3_stay_home_kids=["Karlo", "Hailey", "Liam Ü3", "Moritz"],
     )
     print(full_ann)
     print("\n\nupdating future prio list...")
