@@ -18,7 +18,6 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 ||||Leo|
 ||||Lars|
 ||Holly|||
-|||Maximilian||
 ||Henry|||
 |||Hagen||
 ||||Ananya|
@@ -35,6 +34,7 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 |||Lea Amelie||
 ||Nela|||
 ||Mai An|||
+|||Maximilian||
 ||Kylian|||
 ||Lukas|||
 ||Conrad|||

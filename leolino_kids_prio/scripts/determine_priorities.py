@@ -18,7 +18,7 @@ if __name__ == '__main__':
         u3_stay_home_kids=[],
         # ue3_allowed_groups=["A", "B", "C", "D"],
         ue3_allowed_groups=["A", "B", "D"],
-        ue3_stay_home_kids=["Karlo", "Hailey",],
+        ue3_stay_home_kids=["Karlo", "Hailey", "Liam Ü3", "Moritz"],
     )
     print(full_ann)
     print("\n\nupdating future prio list...")
