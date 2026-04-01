@@ -6,6 +6,7 @@ Michelangelo
 Yuna
 Kylian
 Aris
+Ela
 Lea Amelie
 Adya
 Sophia
@@ -15,7 +16,6 @@ Louise
 Mai An
 Leia
 Liam U3
-Lisa
 Marissa
 Tino
 Karlo
@@ -30,7 +30,6 @@ Oskar
 Lars
 Thomas
 Aaron
-Robert
 Valentina
 Sami
 Holly
