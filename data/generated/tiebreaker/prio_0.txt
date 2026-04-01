@@ -5,6 +5,7 @@ Jeremyas-Max
 Liam Ü3
 Noah
 Oskar
+Ela
 Aurelian
 Sofia K.
 Leo
@@ -18,7 +19,6 @@ Lars
 Constantin
 Holly
 Maximilian
-Lisa
 Henry
 Cloe
 Hagen
@@ -41,7 +41,6 @@ Eleonora
 Oliver
 Ava
 Sunny
-Robert
 Lea Amelie
 Kylian
 Ivayla

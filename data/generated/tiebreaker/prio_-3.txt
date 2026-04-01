@@ -5,7 +5,6 @@ Holly
 Moritz
 Ananya
 Sofia K.
-Robert
 Karlo
 Sami
 Giulio
@@ -16,6 +15,7 @@ Jeremyas-Max
 Ivayla
 Yasmin
 Felix
+Ela
 Hagen
 Lars
 Noah
@@ -33,7 +33,6 @@ Gabriel
 Aurelian
 Lian
 Sophia
-Lisa
 Luca
 Mai An
 Valentina

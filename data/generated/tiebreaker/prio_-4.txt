@@ -1,5 +1,4 @@
 Sunny
-Robert
 Malien
 Cloe
 Nela
@@ -24,6 +23,7 @@ Constantin
 Leia
 Moritz
 Noah
+Ela
 Ava
 Yuna
 Cloe
@@ -72,6 +72,5 @@ Hagen
 Luca
 Marissa
 Mai An
-Lisa
 Hayley Xin
 Cloe

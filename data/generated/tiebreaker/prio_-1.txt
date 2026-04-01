@@ -19,7 +19,6 @@ Yuna
 Hayley Xin
 Saim
 Sami
-Robert
 Aaron
 Noah
 Yasmin
@@ -29,6 +28,7 @@ Leia
 Sophia
 Eleonora
 Felix
+Ela
 Giulio
 Nela
 Thomas
@@ -54,7 +54,6 @@ Karlo
 Lea Amelie
 Leo
 Lars
-Lisa
 Adya
 Liam Ü3
 Marissa

@@ -10,7 +10,6 @@ Aurelian
 Liam U3
 Taro
 Lars
-Lisa
 Kylian
 Sofia K.
 Oliver
@@ -20,6 +19,7 @@ Leia
 Henry
 Sophia G.
 Emma
+Ela
 Thomas
 Holly
 Nela
@@ -58,7 +58,6 @@ Cloe
 Luca
 Adya
 Maximilian
-Robert
 Tino
 Conrad
 Marissa

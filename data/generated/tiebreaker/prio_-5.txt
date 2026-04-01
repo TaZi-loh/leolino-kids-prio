@@ -6,6 +6,7 @@ Adya
 Mattis
 Louise
 Emma
+Ela
 Leia
 Conrad
 Saim
@@ -44,7 +45,6 @@ Holly
 Aaron
 Gabriel
 Aris
-Robert
 Jeremyas-Max
 Moritz
 Malien
@@ -60,5 +60,4 @@ Karlo
 Sophia G.
 Lars
 Khan
-Lisa
 Nela

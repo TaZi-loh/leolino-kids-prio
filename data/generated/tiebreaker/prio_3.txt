@@ -3,7 +3,6 @@ Lars
 Moritz
 Eleonora
 Oskar
-Lisa
 Noah
 Emma
 Thomas
@@ -23,6 +22,7 @@ Aaron
 Liam Ü3
 Tino
 Maximilian
+Ela
 Ava
 Karlo
 Hagen
@@ -30,7 +30,6 @@ Lea Amelie
 Luca
 Hayley Xin
 Yuna
-Robert
 Nela
 Constantin
 Saim
