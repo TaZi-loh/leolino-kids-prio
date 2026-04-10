@@ -6,9 +6,9 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 |-|-|-|-|
 |||Karlo||
 |Ava||||
-|||Moritz||
 |Hayley Xin||||
 |Noah||||
+||||Yasmin|
 |Aurelian||||
 |Felix||||
 |Jakob||||
@@ -20,7 +20,6 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 ||||Lars|
 ||Holly|||
 ||Henry|||
-|||Hagen||
 ||||Ananya|
 |||Gabriel||
 ||||Malien|
@@ -30,15 +29,16 @@ Möchte man abschätzen, ob das Kind bei der nächsten Teilgruppenbetreuung komm
 ||||Louise|
 |||Sophia G.||
 |||Taro||
-||||Yasmin|
+|||Moritz||
 ||||Michelangelo|
 |||Lea Amelie||
+|||Hagen||
 ||Nela|||
+||||Tino|
 ||Mai An|||
 |||Maximilian||
 ||Kylian|||
 |Khan||||
-||||Tino|
 ||Lukas|||
 ||Conrad|||
 |||Lian||
